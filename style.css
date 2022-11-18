@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&display=swap");
+
+:root {
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: hsla(330, 36%, 53%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(330, 36%, 53%, 1) 0%,
+    hsla(289, 68%, 19%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(330, 36%, 53%, 1) 0%,
+    hsla(289, 68%, 19%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(330, 36%, 53%, 1) 0%,
+    hsla(289, 68%, 19%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B15B86", endColorstr="#440F50", GradientType=1 );
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: "Inter", sans-serif;
+}
+
+.profile {
+  display: flex;
+  gap: 2rem;
+}
+.profileImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+
+  width: 200px;
+  height: 200px;
+}
+
+.profileImage h2 {
+  color: white;
+  font-weight: 200;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.qrCode img {
+  width: 100px;
+  height: 100px;
+  filter: invert(1);
+}
+
+.shareIcon img {
+  filter: invert(1);
+  width: 100px;
+  height: 100px;
+}
+
+.shareIcon , .qrCode {
+    display: flex;
+    align-items: center;
+}
+
+.linksHeader{
+ width: 100% ;
+ margin : 2rem ;
+ text-align: center;
+ padding : 2rem ; 
+ color : rgb(35, 2, 19); 
+}
+.linksHeader h2 {
+    font-family:  "Inter", sans-serif;
+    font-weight: 700;
+}
+
+/* section {
+    border : solid 2px white; 
+} */
