@@ -65,6 +65,7 @@ body {
   font-size: 2rem;
   text-align: center;
   font-family: 'Nunito', sans-serif;
+  font-display: swap;
 }
 
 .qrCode img {
@@ -96,7 +97,8 @@ body {
 }
 
 .linksHeader h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif ;
+  font-display: swap;
   font-weight: 700;
 }
 
@@ -135,6 +137,7 @@ body {
 
 .links-section p {
   font-family: 'Nunito', sans-serif;
+  font-display: swap;
   position: absolute;
   bottom: 12px;
   left: 25px;
