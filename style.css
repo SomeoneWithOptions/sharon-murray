@@ -5,6 +5,8 @@
   --shadow-elevation-medium: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.31),
     1.3px 2.7px 2.9px -1.8px hsl(var(--shadow-color) / 0.25),
     6.3px 12.5px 13.5px -3.5px hsl(var(--shadow-color) / 0.19);
+
+    --primary : rgb(35, 2, 19);
 }
 * {
   box-sizing: border-box;
@@ -44,7 +46,19 @@ body {
 .profile {
   display: flex;
   gap: 2rem;
+  /* border : 2px solid white; */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding : 3rem 5rem ;
+  border-radius: 2rem;
+  box-shadow: var(--shadow-elevation-medium);
+  transition: all 0.2s ease-in-out;
 }
+
+.profile:hover{
+  transform: scale(1.05);
+  background-color: white;
+}
+
 
 .profileImage img {
   width: 100%;
@@ -57,8 +71,8 @@ body {
 }
 
 .profileImage h2 {
-  color: white;
-  font-weight: 200;
+  color: var(--primary);
+  font-weight: 400;
   font-size: 2rem;
   text-align: center;
 }
@@ -66,11 +80,11 @@ body {
 .qrCode img {
   width: 100px;
   height: 100px;
-  filter: invert(1);
+  filter: invert(0);
 }
 
 .shareIcon img {
-  filter: invert(1);
+  filter: invert(0);
   width: 70px;
   height: 70px;
 }
@@ -85,7 +99,7 @@ body {
   width: 100%;
   margin: 2rem;
   text-align: center;
-  padding: 2rem;
+  /* padding: 2rem; */
   color: rgb(35, 2, 19);
 }
 
@@ -140,7 +154,10 @@ body {
     align-items: center;
     width: 90%;
     padding-top: 1rem;
+    margin-top: 1rem ;
   }
+
+  
 
   .profileImage {
     order: 1;
