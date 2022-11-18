@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 :root {
   --shadow-color: 0deg 0% 0%;
@@ -6,16 +6,24 @@
     1.3px 2.7px 2.9px -1.8px hsl(var(--shadow-color) / 0.25),
     6.3px 12.5px 13.5px -3.5px hsl(var(--shadow-color) / 0.19);
 
-    --primary : #063034;
-    --neutral-100: white;
+  --primary: #063034;
+  --neutral-100: white;
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 body {
-  background-image: linear-gradient(to right top, #e3e3e3, #e3e9ee, #def1f3, #e1f8ed, #f3fbe2);
+  background-image: linear-gradient(
+    to right top,
+    #e3e3e3,
+    #e3e9ee,
+    #def1f3,
+    #e1f8ed,
+    #f3fbe2
+  );
 
   min-height: 100vh;
 
@@ -23,22 +31,20 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  font-family: "Inter", sans-serif;
 }
 
 .profile {
   display: flex;
   gap: 2rem;
   background-color: var(--neutral-100);
-  padding : 3rem 5rem ;
+  padding: 3rem 5rem;
   border-radius: 2rem;
   box-shadow: var(--shadow-elevation-medium);
   transition: all 0.2s ease-in-out;
   border-bottom: 2px solid var(--primary);
 }
 
-.profile:hover{
+.profile:hover {
   transform: scale(1.05);
   background-color: var(--neutral-100);
 }
@@ -58,16 +64,19 @@ body {
   font-weight: 400;
   font-size: 2rem;
   text-align: center;
+  font-family: 'Nunito', sans-serif;
 }
 
 .qrCode img {
   width: 100px;
   height: 100px;
-  filter: invert(13%) sepia(19%) saturate(1967%) hue-rotate(137deg) brightness(98%) contrast(95%);
+  filter: invert(13%) sepia(19%) saturate(1967%) hue-rotate(137deg)
+    brightness(98%) contrast(95%);
 }
 
 .shareIcon img {
-  filter: invert(13%) sepia(19%) saturate(1967%) hue-rotate(137deg) brightness(98%) contrast(95%);
+  filter: invert(13%) sepia(19%) saturate(1967%) hue-rotate(137deg)
+    brightness(98%) contrast(95%);
   width: 70px;
   height: 70px;
 }
@@ -87,7 +96,7 @@ body {
 }
 
 .linksHeader h2 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 700;
 }
 
@@ -126,6 +135,7 @@ body {
 }
 
 .links-section p {
+  font-family: 'Nunito', sans-serif;
   position: absolute;
   bottom: 15px;
   left: 25px;
@@ -145,7 +155,7 @@ a:visited {
     align-items: center;
     width: 90%;
     padding-top: 1rem;
-    margin-top: 1rem ;
+    margin-top: 1rem;
     background-color: var(--neutral-100);
   }
 
