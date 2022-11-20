@@ -24,6 +24,9 @@ body {
 
 li {
   list-style: none;
+  transition: 0.5 all ease;
+  color: black;
+  transition:  all .2s ease;
 }
 
 header,
@@ -46,6 +49,15 @@ a {
 }
 a:visited {
   color: black;
+  transition:  all .2s ease;
+}
+
+li:hover  {
+  scale: 1.1;
+}
+
+li:hover a:visited{
+  color: var(--primary);
 }
 
 .contact-links {
@@ -60,6 +72,7 @@ a:visited {
 
 span {
   font-size: 1.5rem;
+  color : var(--primary);
 }
 
 h1 {
@@ -80,7 +93,7 @@ h1 {
   top: 40%;
   left: 10%;
 
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   animation: MainImageAppear 2s ease;
 }
 
@@ -104,27 +117,27 @@ img {
   border: 3px solid black;
   position: absolute;
 
-  transition: all 0.5s ease;
-
-  animation: MainImageAppear 2s ease;
+  animation: MainImageAppear 2s ease forwards ;
+  animation-delay: .5s; 
 }
 
-.secondary1{
-  top: 38%;
+.secondary1 {
+  top: 42%;
   left: 32%;
+  opacity: 0;
 }
 
-.secondary2{
-  top: 60%;
+.secondary2 {
+  top: 66%;
   left: 32%;
+opacity: 0;
 }
 
-
-p{
+p {
   width: 30ch;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   text-justify: auto;
-  position : absolute;
+  position: absolute;
   bottom: 10%;
   left: 80%;
 }
@@ -132,27 +145,10 @@ p{
 @keyframes MainImageAppear {
   0% {
     opacity: 0;
-    transform: scale(0);
-    /* transform: translateX(-100%); */
+    transform: translateX(-100px);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
-    /* transform: translateX(0); */
+    transform: translateX(0);
   }
 }
-
-@keyframes SecondaryImageAppear {
-  0% {
-    opacity: 0;
-    transform: scale(.2);
-    /* transform: translateY(-100%); */
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    /* transform: translateY(0); */
-  }
-}
-  
-  
