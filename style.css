@@ -64,8 +64,9 @@ span {
 
 h1 {
   font-weight: 400;
-  font-size: 12rem;
+  font-size: 14rem;
   text-align: right;
+  margin-right: 2rem;
 }
 
 .main-image {
@@ -83,7 +84,8 @@ h1 {
 }
 
 .main-image:hover,
-.secondary1:hover {
+.secondary1:hover,
+.secondary2:hover {
   transform: scale(1.05);
   filter: grayscale(0%);
 }
@@ -92,18 +94,34 @@ img {
   filter: grayscale(30%);
 }
 
-.secondary1 {
+.secondary1,
+.secondary2 {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid black;
   position: absolute;
-  top: 40%;
-  left: 32%;
 
   transition: all 0.5s ease;
 }
-div {
-  /* border: 1px solid black; */
+
+.secondary1{
+  top: 38%;
+  left: 32%;
+}
+
+.secondary2{
+  top: 60%;
+  left: 32%;
+}
+
+
+p{
+  width: 30ch;
+  letter-spacing: .3rem;
+  text-justify: auto;
+  position : absolute;
+  bottom: 10%;
+  left: 80%;
 }
