@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://use.typekit.net/cpw6jin.css");
 
 :root {
   --shadow-color: 0deg 0% 0%;
@@ -6,8 +6,10 @@
     1.3px 2.7px 2.9px -1.8px hsl(var(--shadow-color) / 0.25),
     6.3px 12.5px 13.5px -3.5px hsl(var(--shadow-color) / 0.19);
 
-  --primary: #063034;
-  --neutral-100: white;
+  --primary: #225CE3;
+  --neutral-100: #ffefca;
+
+  
 }
 
 * {
@@ -16,14 +18,8 @@
   margin: 0;
 }
 body {
-  background-image: linear-gradient(
-    to right top,
-    #e3e3e3,
-    #e3e9ee,
-    #def1f3,
-    #e1f8ed,
-    #f3fbe2
-  );
+  font-family: adobe-garamond-pro, serif; 
+  background-color: var(--neutral-100);
 
   min-height: 100vh;
 
@@ -33,148 +29,3 @@ body {
   flex-direction: column;
 }
 
-.profile {
-  margin-top: 1rem;
-  display: flex;
-  gap: 6rem;
-  background-color: var(--neutral-100);
-  padding: 1rem 6rem;
-  border-radius: 1rem;
-  box-shadow: var(--shadow-elevation-medium);
-  border-bottom: 2px solid var(--primary);
-}
-
-.profileImage img {
-  object-fit: cover;
-  border-radius: 1rem;
-
-  width: 250px;
-  height: auto;
-  object-position: center;
-  transition: all 0.3s ease;
-}
-
-.profileImage h2 {
-  color: var(--primary);
-  font-weight: 400;
-  font-size: 2rem;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-display: swap;
-}
-
-.qrCode img {
-  width: 100px;
-  height: 100px;
-  filter: invert(13%) sepia(19%) saturate(1967%) hue-rotate(137deg)
-    brightness(98%) contrast(95%);
-}
-
-.shareIcon img {
-  filter: invert(13%) sepia(19%) saturate(1967%) hue-rotate(137deg)
-    brightness(98%) contrast(95%);
-  width: 70px;
-  height: 70px;
-}
-
-.shareIcon,
-.qrCode {
-  display: flex;
-  align-items: center;
-}
-
-.linksHeader {
-  width: 100%;
-  margin: 2rem;
-  text-align: center;
-  /* padding: 2rem; */
-  color: var(--primary);
-}
-
-.linksHeader h2 {
-  font-family: "Nunito", sans-serif;
-  font-display: swap;
-  font-weight: 700;
-}
-
-.links-section {
-  width: 40%;
-}
-
-.links-section div {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
-  opacity: 0.8;
-  border-radius: 3rem;
-  width: 100%;
-
-  margin: 1rem 0;
-  height: 50px;
-  border-bottom: 2px solid var(--primary);
-  box-shadow: var(--shadow-elevation-medium);
-
-  transition: all 0.3s ease;
-}
-
-.links-section div:hover {
-  transform: translateY(-5px);
-  scale: 1.05;
-  opacity: 1;
-}
-
-.links-section img {
-  position: absolute;
-  right: 25px;
-  bottom: 8px;
-  height: 30px;
-  width: 30px;
-}
-
-.links-section p {
-  font-family: "Nunito", sans-serif;
-  font-display: swap;
-  position: absolute;
-  bottom: 12px;
-  left: 25px;
-}
-
-a {
-  color: var(--primary);
-}
-
-a:visited {
-  color: var(--primary);
-}
-
-@media screen and (max-width: 768px) {
-  .profile {
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    padding-top: 1rem;
-    margin-top: 1rem;
-    background-color: var(--neutral-100);
-    gap : 1rem;
-  }
-
-  .profileImage {
-    order: 1;
-  }
-
-  .qrCode {
-    order: 2;
-  }
-  .shareIcon {
-    display: none;
-  }
-  .links-section {
-    width: 80%;
-  }
-  .links-section div {
-    opacity: 0.8;
-  }
-  .linksHeader {
-    margin: 1rem 0;
-    padding: 0;
-  }
-}
