@@ -207,9 +207,15 @@ img {
   }
 
   .main-image:hover {
-    transform: none;
+    transform: scale(1.02);
     filter: none;
   }
+
+  .secondary1:hover,
+  .secondary2:hover{
+    transform: scale(1.05);
+  }
+
 
   .secondary1,
   .secondary2 {
