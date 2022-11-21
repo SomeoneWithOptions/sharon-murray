@@ -1,0 +1,26 @@
+h1 {
+  font-weight: 400;
+  font-size: 14rem;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+.text-contact {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+}
+
+.qrcode {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+p {
+  width: 42ch;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-justify: inter-word;
+}

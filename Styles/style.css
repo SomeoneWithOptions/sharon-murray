@@ -1,0 +1,53 @@
+@import url("https://use.typekit.net/cpw6jin.css");
+@import "./HeaderStyle.css";
+@import "./Images.css";
+@import "./Text.css";
+
+:root {
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-medium: 0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.31),
+    1.3px 2.7px 2.9px -1.8px hsl(var(--shadow-color) / 0.25),
+    6.3px 12.5px 13.5px -3.5px hsl(var(--shadow-color) / 0.19);
+
+  --primary: #225ce3;
+  --neutral-100: #ffefca;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: adobe-garamond-pro, serif;
+  background-color: var(--neutral-100);
+  min-height: 100vh;
+}
+
+section {
+  display: flex;
+}
+
+.image-container {
+  flex-basis: 60%;
+  position: relative;
+}
+
+.text-contact {
+  flex: 1 1;
+}
+
+.startAnimation {
+  animation: MainImageAppear 2s ease both;
+}
+
+@keyframes MainImageAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
