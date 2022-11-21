@@ -141,13 +141,26 @@ img {
   opacity: 0;
 }
 
-p {
+.text-contact {
+  gap :  .5rem;
+  /* border: solid 1px black ;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
   width: 30ch;
-  letter-spacing: 0.3rem;
-  text-justify: auto;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-justify: inter-word;
   position: absolute;
   bottom: 10%;
   left: 80%;
+}
+
+.text-contact .qrcode{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
 }
 
 @keyframes MainImageAppear {
@@ -162,6 +175,10 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+
+  a{
+    font-size: 1.1rem;
+  }
 
   body{
     height: 100vh;
@@ -187,7 +204,7 @@ p {
     height: 100vw;
     left: 0;
     filter: grayscale(0);
-    top:45%; 
+    top:48%; 
   }
 
   .main-image:hover {
