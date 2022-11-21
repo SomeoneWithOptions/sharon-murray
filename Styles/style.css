@@ -26,10 +26,12 @@ body {
 
 section {
   display: flex;
+  height: 50vh;
 }
 
 .image-container {
   flex-basis: 60%;
+  width: max-content;
   position: relative;
 }
 

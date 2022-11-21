@@ -5,12 +5,14 @@ h1 {
   margin-right: 2rem;
 }
 
-.text-contact {
+.text-container {
   gap: 0.5rem;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-bottom: 2rem;
+  align-items: center;
+
+  position: absolute;
+  right: 5%;
+  top: 65%;
 }
 
 .qrcode {
@@ -19,7 +21,7 @@ h1 {
   object-fit: cover;
 }
 p {
-  width: 42ch;
+  width: 30ch;
   font-size: 1rem;
   letter-spacing: 0.2rem;
   text-justify: inter-word;

@@ -1,35 +1,44 @@
+.main-image,
+.secondary1,
+.secondary2 {
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(30%);
+}
+
+.main-image:hover,
+.secondary1:hover,
+.secondary2:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
 .main-image {
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid black;
-    postition : abolute
-  }
-  
-  
-  .main-image,
-  .secondary1,
-  .secondary2 {
-    transition: all 0.3s ease-in-out;
-    filter: grayscale(30%);
-  }
-  
-  .main-image:hover,
-  .secondary1:hover,
-  .secondary2:hover {
-    transform: scale(1.1);
-    filter: grayscale(0);
-  }
-  
-  .secondary1,
-  .secondary2 {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid black;
-  
-    animation-delay: 0.5s;
-  }
-  
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid black;
+  position  : absolute ; 
+  left : 20%;
+  top : 10%;
+}
+
+.secondary1,
+.secondary2 {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid black;
+  animation-delay: 0.5s;
+  position : absolute ; 
+  left : 58%
+}
+
+.secondary1{
+    top :15%;
+}
+
+.secondary2{
+    top : 62%;
+}
