@@ -199,9 +199,9 @@ img {
   }
 
   .main-image {
-    width: 100vw;
+    width: 96vw;
     height: 100vw;
-    left: 0;
+    left: 2%;
     filter: grayscale(0);
     top: 42%;
   }
@@ -213,8 +213,8 @@ img {
 
   .secondary1,
   .secondary2 {
-    width: 150px;
-    height: 150px;
+    width: 40vw;
+    height: 40vw;
     top: 90%;
     filter: grayscale(0);
   }
