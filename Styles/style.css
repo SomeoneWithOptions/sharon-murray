@@ -124,6 +124,7 @@ section {
     position: absolute;
     top: 10%;
     left: 8%;
+    object-position: top;
   }
 
   img {
@@ -140,7 +141,7 @@ section {
     animation-delay: 0.5s;
     position: absolute;
     top: 98%;
-  }
+    }
 
   .secondary1 {
     left: 10%;
