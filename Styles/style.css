@@ -25,10 +25,11 @@ section {
   display: flex;
 }
 
-.image-container {
-  flex-basis: 60%;
-  width: max-content;
-  position: relative;
+.image-container{
+  display :grid ;
+  grid-template-areas : 
+  "main main"
+  "sec1 sec2"
 }
 
 .startAnimation {
@@ -115,8 +116,11 @@ section {
 
   .image-container{
     width: 100%;
+    padding-top: 2rem;
   }
-
+  picture {
+    grid-area: main;
+  }
   .main-image {
     width: 90vw;
     height: 90vw;
@@ -124,6 +128,8 @@ section {
     border-radius: 50%;
     border: 3px solid black;
     object-position: top;
+    grid-area: main;
+    justify-self: center;
   }
 
   img {
@@ -132,18 +138,24 @@ section {
 
   .secondary1,
   .secondary2 {
-    width: 150px;
-    height: 150px;
+    width: 40vw;
+    height: 40vw;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid black;
     animation-delay: 0.5s;
+    justify-self: center;
+
+    position :relative ;
+    top : -40%;
   }
 
   .secondary1 {
+    grid-area: sec1;
   }
 
   .secondary2 {
+    grid-area: sec2;
   }
 
   .main-image,
@@ -192,7 +204,7 @@ section {
     flex-wrap: nowrap;
     margin: 0;
     flex-grow: 1;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem ;
   }
 
   li {
@@ -377,5 +389,12 @@ section {
 
   .text-container {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-aspect-ratio : 4/3){
+  .secondary1,
+  .secondary2{
+    top : -20%
   }
 }
