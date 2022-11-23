@@ -19,12 +19,10 @@ body {
   font-family: adobe-garamond-pro, serif;
   background-color: var(--neutral-100);
   min-height: 100vh;
-  margin-bottom: 2rem;
 }
 
 section {
   display: flex;
-  height: 50vh;
 }
 
 .image-container {
@@ -115,15 +113,16 @@ section {
     color: var(--primary);
   }
 
+  .image-container{
+    width: 100%;
+  }
+
   .main-image {
     width: 90vw;
     height: 90vw;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid black;
-    position: absolute;
-    top: 10%;
-    left: 8%;
     object-position: top;
   }
 
@@ -139,16 +138,12 @@ section {
     border-radius: 50%;
     border: 3px solid black;
     animation-delay: 0.5s;
-    position: absolute;
-    top: 98%;
-    }
+  }
 
   .secondary1 {
-    left: 10%;
   }
 
   .secondary2 {
-    left: 90%;
   }
 
   .main-image,
@@ -196,15 +191,14 @@ section {
     flex-basis: 50%;
     flex-wrap: nowrap;
     margin: 0;
-    flex-grow : 1 ; 
-    padding : 1rem 0 1rem 1rem 
+    flex-grow: 1;
+    padding: 1rem 0 1rem 1rem;
   }
 
-  li{
-    margin : 0;
-    padding : 0 ;
+  li {
+    margin: 0;
+    padding: 0;
   }
- 
 
   h1 {
     margin: 0 2rem 0 0;
@@ -231,15 +225,12 @@ section {
   .secondary2 {
     width: 140px;
     height: 140px;
-    left: 55%;
     filter: grayscale(30%);
   }
 
   .secondary1 {
-    top: 15%;
   }
   .secondary2 {
-    top: 65%;
   }
 
   .qrcode {
@@ -269,22 +260,17 @@ section {
   .main-image {
     width: 400px;
     height: 400px;
-    left: 25%;
   }
- 
 
   .secondary1,
   .secondary2 {
     width: 150px;
     height: 150px;
-    left: 68%;
   }
- 
+
   .secondary1 {
-    top: 15%;
   }
   .secondary2 {
-    top: 75%;
   }
 
   .qrcode {
@@ -300,21 +286,17 @@ section {
   .main-image {
     width: 400px;
     height: 400px;
-    left: 25%;
   }
 
   .secondary1,
   .secondary2 {
     width: 150px;
     height: 150px;
-    left: 70%;
   }
 
   .secondary1 {
-    top: 15%;
   }
   .secondary2 {
-    top: 45%;
   }
 
   .qrcode {
@@ -330,21 +312,17 @@ section {
   .main-image {
     width: 500px;
     height: 500px;
-    left: 25%;
   }
 
   .secondary1,
   .secondary2 {
     width: 200px;
     height: 200px;
-    left: 68%;
   }
 
   .secondary1 {
-    top: 15%;
   }
   .secondary2 {
-    top: 65%;
   }
 
   .qrcode {
@@ -369,10 +347,8 @@ section {
   }
 
   .secondary1 {
-    top: 20%;
   }
   .secondary2 {
-    top: 55%;
   }
 }
 
@@ -393,24 +369,13 @@ section {
   .secondary2 {
     width: 250px;
     height: 250px;
-    left: 65%;
   }
   .secondary1 {
-    top: 15%;
   }
   .secondary2 {
-    top: 50%;
   }
 
   .text-container {
     font-size: 1.5rem;
-    left: 80%;
-  }
-}
-
-@media (min-width: 2500px) and (height <= 1300px){
-
-  .secondary2{
-    top:65%;
   }
 }
