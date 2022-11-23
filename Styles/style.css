@@ -195,7 +195,16 @@ section {
   ul {
     flex-basis: 50%;
     flex-wrap: nowrap;
+    margin: 0;
+    flex-grow : 1 ; 
+    padding : 1rem 0 1rem 1rem 
   }
+
+  li{
+    margin : 0;
+    padding : 0 ;
+  }
+ 
 
   h1 {
     margin: 0 2rem 0 0;
@@ -262,6 +271,7 @@ section {
     height: 400px;
     left: 25%;
   }
+ 
 
   .secondary1,
   .secondary2 {
@@ -269,7 +279,7 @@ section {
     height: 150px;
     left: 68%;
   }
-
+ 
   .secondary1 {
     top: 15%;
   }
