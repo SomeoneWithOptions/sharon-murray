@@ -269,19 +269,35 @@ section {
     width: 100px;
     height: 100px;
   }
+
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 3px solid black;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-elevation-medium);
+  }
+
   .text-container {
-    margin: 6rem 0 0 6rem;
+    margin: 0;
     gap: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     padding: 0 2rem;
     letter-spacing: 0.2rem;
   }
   p {
     width: 30ch;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+  }
+  p::first-letter {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 }
 
@@ -312,8 +328,6 @@ section {
     box-shadow: var(--shadow-elevation-high);
   }
   .text-container {
-    padding: 0;
-    margin: 0;
     flex-basis: 50%;
   }
   .qrcode {
@@ -322,7 +336,7 @@ section {
   }
 }
 
-@media (min-width: 1601px) {
+@media (min-width: 1600px) {
   h1 {
     font-size: 14rem;
     margin-bottom: 5rem;
@@ -382,6 +396,9 @@ section {
     width: 200px;
     height: 200px;
   }
+  footer a {
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 2500px) {
@@ -400,6 +417,43 @@ section {
   }
 
   .text-container {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 3600px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 30rem;
+  }
+  .main-image {
+    width: 1000px;
+    height: 1000px;
+  }
+  .secondary1,
+  .secondary2 {
+    width: 350px;
+    height: 350px;
+  }
+  p {
+    font-size: 2rem;
+  }
+  p::first-letter {
+    font-size: 2.4rem;
+  }
+  .qrcode {
+    width: 200px;
+    height: 200px;
+  }
+
+  footer a {
     font-size: 1.5rem;
   }
 }
