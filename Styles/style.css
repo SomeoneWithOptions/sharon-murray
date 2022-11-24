@@ -43,6 +43,7 @@ footer span {
 }
 body {
   font-family: adobe-garamond-pro, serif;
+  font-display: swap;
   background-color: var(--neutral-100);
   min-height: 100vh;
 }
