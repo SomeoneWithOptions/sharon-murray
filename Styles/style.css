@@ -19,12 +19,24 @@
 
   --primary: #225ce3;
   --neutral-100: #ffefca;
-
-  --ff-main: "EB Garamond", serif;
-  --ff-main2: "Cormorant Garamond", serif;
-  --ff-text: "Inter", sans-serif;
-
+  --ff-main: "Cormorant Garamond", serif;
   --font-size: 1rem;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/Assets/CormorantGaramond-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/Assets/CormorantGaramond-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/Assets/CormorantGaramond-Medium.ttf");
+  font-weight: 500;
 }
 
 footer {
@@ -46,7 +58,7 @@ footer span {
   margin: 0;
 }
 body {
-  font-family: var(--ff-main2);
+  font-family: var(--ff-main);
   background-color: var(--neutral-100);
   min-height: 100vh;
 }
