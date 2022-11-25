@@ -1,5 +1,3 @@
-@import url("https://use.typekit.net/cpw6jin.css");
-
 :root {
   --shadow-color: 42deg 39% 50%;
   --shadow-elevation-medium: 0.7px 0.7px 0.9px hsl(var(--shadow-color) / 0.58),
@@ -21,6 +19,12 @@
 
   --primary: #225ce3;
   --neutral-100: #ffefca;
+
+  --ff-main: "EB Garamond", serif;
+  --ff-main2: "Cormorant Garamond", serif;
+  --ff-text: "Inter", sans-serif;
+
+  --font-size: 1rem;
 }
 
 footer {
@@ -42,8 +46,7 @@ footer span {
   margin: 0;
 }
 body {
-  font-family: adobe-garamond-pro, serif;
-  font-display: swap;
+  font-family: var(--ff-main2);
   background-color: var(--neutral-100);
   min-height: 100vh;
 }
@@ -83,7 +86,7 @@ section {
     flex: 1 1 25%;
     text-align: center;
     padding: 0.5rem;
-    display: relative;
+    position: relative;
   }
 
   header,
@@ -99,7 +102,7 @@ section {
   a {
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: all 0.2s ease;
   }
   a:visited {
@@ -120,7 +123,7 @@ section {
 
   li:nth-child(2) a {
     color: var(--primary);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .header {
@@ -129,12 +132,14 @@ section {
 
   header {
     width: 100vw;
+    font-weight: 500;
+    font-size: 1rem;
   }
 
   h1 {
     margin: 2rem 0 0 1rem;
-    font-size: 5rem;
-    line-height: 3.5rem;
+    font-size: 6rem;
+    line-height: 4rem;
     font-weight: 500;
   }
   .headerName {
@@ -220,6 +225,7 @@ section {
     display: flex;
     align-items: center;
     flex-basis: 40%;
+    font-size: 1.3rem;
   }
 
   ul {
@@ -242,7 +248,7 @@ section {
     height: 2px;
     background-color: var(--primary);
     position: absolute;
-    bottom: 0;
+    bottom: -20%;
     left: 20%;
     border-radius: 2rem;
     transition: all 0.3s ease-in-out;
@@ -257,7 +263,7 @@ section {
     text-align: right;
     font-size: 8rem;
     line-height: initial;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .headerName {
@@ -306,16 +312,14 @@ section {
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
-    letter-spacing: 0.2rem;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
   }
   p {
     width: 30ch;
-    letter-spacing: 0.2rem;
-    font-weight: 500;
   }
   p::first-letter {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.3rem;
   }
 }
 
@@ -357,7 +361,6 @@ section {
 @media (min-width: 1600px) {
   h1 {
     font-size: 14rem;
-    margin-bottom: 5rem;
   }
   .main-image {
     width: 500px;
