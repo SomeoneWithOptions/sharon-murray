@@ -27,16 +27,19 @@
   font-family: "Cormorant Garamond";
   src: url("/Assets/CormorantGaramond-SemiBold.ttf");
   font-weight: 600;
+  font-display: swap;
 }
 @font-face {
   font-family: "Cormorant Garamond";
   src: url("/Assets/CormorantGaramond-Regular.ttf");
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: "Cormorant Garamond";
   src: url("/Assets/CormorantGaramond-Medium.ttf");
   font-weight: 500;
+  font-display: swap;
 }
 
 footer {
