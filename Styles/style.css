@@ -43,7 +43,15 @@ footer span {
 }
 body {
   font-family: var(--ff-main);
-  background-color: var(--neutral-100);
+  background-image: linear-gradient(
+    to right bottom,
+    #c6ddff,
+    #c9d6ff,
+    #d2cdff,
+    #e1c3ff,
+    #f2b7f9
+  );
+
   min-height: 100vh;
 }
 
@@ -60,6 +68,14 @@ section {
 
 .startAnimation {
   animation: MainImageAppear 2s ease both;
+}
+
+h1 {
+  font-family: quiche-display, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+  font-size: clamp(6rem, 5vw, 20rem);
 }
 
 @keyframes MainImageAppear {
@@ -98,7 +114,7 @@ section {
   a {
     text-decoration: none;
     color: black;
-    font-size: .8rem;
+    font-size: 0.8rem;
     transition: all 0.2s ease;
   }
   a:visited {
@@ -133,15 +149,11 @@ section {
   }
 
   h1 {
-    font-family: quiche-display, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-
     margin: 2rem 0 0 1rem;
-    font-size: 6rem;
     line-height: 5rem;
     font-weight: 500;
   }
+
   .headerName {
     color: var(--primary);
   }
@@ -324,6 +336,13 @@ section {
 }
 
 @media (min-width: 1200px) {
+  li a {
+    font-size: 1rem;
+  }
+
+  li:nth-child(2) a {
+    font-size: 1.2rem;
+  }
   h1 {
     font-size: 10rem;
   }
@@ -396,7 +415,7 @@ section {
   }
 
   a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   li:nth-child(2) a {
