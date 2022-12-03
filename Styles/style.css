@@ -19,27 +19,8 @@
 
   --primary: #225ce3;
   --neutral-100: #ffefca;
-  --ff-main: "Cormorant Garamond", serif;
+  --ff-main: poppins, sans-serif;
   --font-size: 1rem;
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
-  src: url("/Assets/CormorantGaramond-SemiBold.ttf");
-  font-weight: 600;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cormorant Garamond";
-  src: url("/Assets/CormorantGaramond-Regular.ttf");
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cormorant Garamond";
-  src: url("/Assets/CormorantGaramond-Medium.ttf");
-  font-weight: 500;
-  font-display: swap;
 }
 
 footer {
@@ -100,7 +81,7 @@ section {
     transition: all 0.2s ease;
     flex: 1 1 25%;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     position: relative;
   }
 
@@ -117,7 +98,7 @@ section {
   a {
     text-decoration: none;
     color: black;
-    font-size: 1.1rem;
+    font-size: .8rem;
     transition: all 0.2s ease;
   }
   a:visited {
@@ -138,7 +119,7 @@ section {
 
   li:nth-child(2) a {
     color: var(--primary);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .header {
