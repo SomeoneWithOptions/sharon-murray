@@ -139,7 +139,7 @@ h1 {
     color: #fff;
     border-radius: 0.2rem;
   }
-  .header,
+  .logo,
   .text-container {
     display: none;
   }
@@ -213,7 +213,7 @@ h1 {
   ul {
     margin: 0;
   }
-  .header {
+  .logo {
     padding: 1.2rem 1rem 1rem 3rem;
     display: flex;
     align-items: center;
@@ -267,7 +267,7 @@ h1 {
   .headerName {
     color: #000;
   }
-  .headerSpan {
+  .logo__text--accent {
     color: var(--primary);
   }
   .main-image {
@@ -367,7 +367,7 @@ h1 {
   }
 }
 @media (min-width: 1981px) {
-  .header,
+  .logo,
   a {
     font-size: 1.7rem;
   }
@@ -413,7 +413,7 @@ h1 {
   }
 }
 @media (min-width: 3600px) {
-  .header,
+  .logo,
   a {
     font-size: 2rem;
   }
