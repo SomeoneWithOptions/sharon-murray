@@ -1,5 +1,5 @@
 :root {
-  --shadow-color: 42deg 39% 50%;
+  --shadow-color: 274deg 37% 54%;
   --shadow-elevation-medium: 0.7px 0.7px 0.9px hsl(var(--shadow-color) / 0.58),
     1.3px 1.2px 1.5px -1px hsl(var(--shadow-color) / 0.49),
     3.1px 2.8px 3.6px -2.1px hsl(var(--shadow-color) / 0.39),
