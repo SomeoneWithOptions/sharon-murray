@@ -20,7 +20,7 @@
   --ff-main: poppins, sans-serif;
   --font-size: 1rem;
 }
-footer {
+.footer {
   position: fixed;
   bottom: 0;
   text-align: right;
@@ -29,7 +29,7 @@ footer {
   padding-bottom: 0.3rem;
   font-size: 0.8rem;
 }
-footer span {
+.footer__link--accent {
   color: var(--primary);
 }
 * {
@@ -387,7 +387,7 @@ h1 {
     width: 200px;
     height: 200px;
   }
-  footer a {
+  .footer__link {
     font-size: 1.1rem;
   }
 }
@@ -440,7 +440,7 @@ h1 {
     width: 200px;
     height: 200px;
   }
-  footer a {
+  .footer__link {
     font-size: 1.5rem;
   }
 }
