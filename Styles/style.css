@@ -47,7 +47,8 @@ body {
     #e1c3ff,
     #f2b7f9
   );
-  height: 100vh;
+  min-height: 100vh ;
+
 }
 section {
   display: flex;
@@ -120,7 +121,7 @@ h1 {
   }
   a {
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   li:hover {
     scale: 1.1;
@@ -151,6 +152,7 @@ h1 {
   h1 {
     margin: 2rem 0 0 1rem;
     line-height: 5rem;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   }
   .image-container {
     width: 100%;
@@ -194,6 +196,9 @@ h1 {
   .secondary2:hover {
     transform: scale(1.1);
     filter: grayscale(0);
+  }
+  .footer__link {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 801px) {
@@ -265,6 +270,7 @@ h1 {
     font-size: 8rem;
     line-height: initial;
     font-weight: 600;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   }
   .headerName {
     color: #000;
