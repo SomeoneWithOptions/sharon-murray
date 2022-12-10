@@ -47,7 +47,7 @@ body {
     #e1c3ff,
     #f2b7f9
   );
-  min-height: 100vh;
+  height: 100vh;
 }
 section {
   display: flex;
@@ -57,7 +57,7 @@ section {
   grid-template-areas: "main main" "sec1 sec2";
 }
 .startAnimation {
-  animation: 2s both MainImageAppear;
+  animation: 2s both ease MainImageAppear;
 }
 h1 {
   font-family: quiche-display, sans-serif;
@@ -89,7 +89,7 @@ h1 {
     color: var(--primary);
   }
   h1,
-  header {
+  .header {
     font-weight: 500;
   }
   .main-image,
@@ -104,18 +104,19 @@ h1 {
   }
   li {
     list-style: none;
-    flex: 1 1 25%;
+    flex: 1 1 33%;
     text-align: center;
     padding: 0.5rem 0;
     position: relative;
   }
-  header,
+  .header,
   ul {
     display: flex;
   }
   ul {
     flex-wrap: wrap;
     margin-top: 0.8rem;
+    width: 100%;
   }
   a {
     text-decoration: none;
@@ -139,11 +140,11 @@ h1 {
     color: #fff;
     border-radius: 0.2rem;
   }
-  .logo,
+  .header__logo,
   .text-container {
     display: none;
   }
-  header {
+  .header {
     width: 100vw;
     font-size: 1rem;
   }
@@ -204,8 +205,9 @@ h1 {
   body {
     margin: 0;
     padding: 0;
+    height: calc(100vh - 2rem);
   }
-  header {
+  .header {
     width: 100vw;
     margin-top: 2rem;
   }
@@ -213,7 +215,7 @@ h1 {
   ul {
     margin: 0;
   }
-  .logo {
+  .header__logo {
     padding: 1.2rem 1rem 1rem 3rem;
     display: flex;
     align-items: center;
@@ -267,7 +269,7 @@ h1 {
   .headerName {
     color: #000;
   }
-  .logo__text--accent {
+  .header_logo--accent {
     color: var(--primary);
   }
   .main-image {
@@ -367,7 +369,7 @@ h1 {
   }
 }
 @media (min-width: 1981px) {
-  .logo,
+  .header__logo,
   a {
     font-size: 1.7rem;
   }
@@ -413,7 +415,7 @@ h1 {
   }
 }
 @media (min-width: 3600px) {
-  .logo,
+  .header__logo,
   a {
     font-size: 2rem;
   }
